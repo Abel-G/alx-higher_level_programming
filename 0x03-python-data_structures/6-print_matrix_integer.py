@@ -5,5 +5,5 @@ def print_matrix_integer(matrix=[[]]):
             if y == x[-1]:
                 print("{:d}".format(y), end="")
             else:
-                print("{:d}".format(y), end=" ") 
+                print("{:d}".format(y), end=" ")
         print()
