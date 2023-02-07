@@ -3,5 +3,5 @@
 
 
 def class_to_json(obj):
-        """ eturn dictionary description with simple data structure """
-            return obj.__dict__
+    """ eturn dictionary description with simple data structure """
+    return obj.__dict__
