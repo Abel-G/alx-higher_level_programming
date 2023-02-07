@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" contain function that return number of lines"""
+""" contan write file function """
 
 
-def number_of_lines(filename=""):
-    """returns the number of lines of a text file"""
-    with open(filename, 'r', encoding='utf-8') as f:
-        return len(f.readlines())
+def write_file(filename="", text=""):    
+    """ writes a string to a text file """
+    with open(filename, 'w', encoding='utf-8') as f:
+        return f.write(text)
