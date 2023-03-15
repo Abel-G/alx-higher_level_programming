@@ -1,3 +1,4 @@
---script to insert a new row in the table
-INSERT INTO first_table (id, name)
-VALUES (89, 'Best School');
+#!/usr/bin/env bash
+-- insert new row to first_table
+INSERT INTO `first_table` (`id`, `name`) VALUES (89, "Best School");
+
