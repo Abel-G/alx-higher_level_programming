@@ -1,4 +1,4 @@
---script that list all records of the table from a data base
-SELECT score, name
-FROM second_table
-ORDER BY score DESC;
+#!/usr/bin/env bash
+-- script that lists all records of the table
+SELECT score, name FROM second_table ORDER BY score Desc;
+
