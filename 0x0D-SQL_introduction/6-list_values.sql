@@ -1,3 +1,3 @@
---list all rows of a table
-SELECT *
-FROM first_table;
+#!/usr/bin/env bash
+-- list all rows offirst table
+SELECT * FROM `first_table`;
