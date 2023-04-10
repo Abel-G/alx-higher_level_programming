@@ -7,7 +7,7 @@ if (isNaN(number)) {
   while (i < number) {
     let square = '';
     for (let j = 0; j < number; j++) {
-      square += 'x';
+      square += 'X';
     }
     console.log(square);
     i++;
