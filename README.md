@@ -1,1 +1,1 @@
-this is java script warm up project
+This is javascript Objects, Scopes and Closures project
