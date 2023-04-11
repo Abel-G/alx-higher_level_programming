@@ -5,7 +5,7 @@ if (isNaN(number)) {
 } else {
   let i = 0;
   while (i < number) {
-    console.log('Cis fun');
+    console.log('C is fun');
     i++;
   }
 }
