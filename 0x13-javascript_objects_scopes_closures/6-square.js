@@ -2,21 +2,18 @@
 const Rectangle = require('./5-square');
 
 class Square extends Rectangle {
-    constructor (size) {
-	super(size, size);
-    }
-    charPrint(c) {
-	if (c === undefined) { 
-	    c = 'X'; 
-	    for (let i = 0; i < this.height; i++) {
-		console.log('X'.repeat(this.height));
-	    }
-	}
-	else {
-	    for (let i = 0; i < this.height; i++) {
-		console.log('C'.repeat(this.width));
-	    }
+  constructor (size) {
+    super(size, size);
+  }
+
+  charPrint (c) {
+    if (c === undefined) {
+	c = 'X';
+	let row = c.repeat(this.width);
+	for (let i = 0; i < this.height; i++) {
+	    console.log(row);
 	}
     }
+  }
 }
 module.exports = Square;
