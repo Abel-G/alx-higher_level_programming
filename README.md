@@ -1,1 +1,1 @@
-This is javascript Objects, Scopes and Closures project
+This is high level programing with python JS etc ..
