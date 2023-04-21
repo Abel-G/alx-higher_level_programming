@@ -21,12 +21,12 @@ if __name__ == '__main__':
     cursor = con.cursor()
 
     cursor.execute(
-        "SELECT cities.id, cities.name, states.name  FROM cities \
+        "SELECT cities.name, states.name  FROM cities \
         JOIN states ON cities.state_id = states.id \
         WHERE states.name LIKE %s \
         ORDER BY cities.id ASC", (state_name,))
 
     rows = cursor.fetchall()
-    print(", ".join(row[0] for row in query_rows))
+    print(", ".join(row[1] for row in query_rows))
     cursor.close()
     con.close()
