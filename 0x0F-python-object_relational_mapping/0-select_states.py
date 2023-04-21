@@ -2,13 +2,21 @@
 """
 script that lists all states from the database hbtn_0e_0_usa
 """
-if __name__ == "__main__":
-    import MySQLdb
-    db = MySQLdb.connect(user=argv[1], password=argv[2], database = argv[3], host ="localhost", port=3306)
-    cur = db.cursor()
-    cur.execute(SELECT * FROM states ORDER BY states.id ASC)
-    rows = cursor.fetchall()
-    for row in rows:
-        print(row)
-    cur.close()
-    db.close()
+
+import MySQLdb
+import sys
+
+user = sys.argv[1]
+pw = sys.argv[2]
+db = sys.argv[3]
+con = MySQLdb.connect(host="localhost", port=3306, user=user, passwd=pw, db=db)
+cursor = connection.cursor()
+
+query = "SELECT * FROM states ORDER BY id ASC"
+cursor.execute(query)
+
+results = cursor.fetchall()
+for row in results:
+    print(row)
+cursor.close()
+connection.close()
