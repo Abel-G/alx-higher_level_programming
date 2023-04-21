@@ -18,8 +18,8 @@ if __name__ == '__main__':
     cursor = con.cursor()
 
     cursor.execute(
-        "SELECT * FROM cities \
-        ORDER BY id ASC")
+        "SELECT cities.id, cities.name, states.name  FROM cities \
+        JOIN states ON cities.state.id = states.id")
 
     results = cursor.fetchall()
     for row in results:
