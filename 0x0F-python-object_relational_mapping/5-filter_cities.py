@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     cursor.execute(
         "SELECT cities.name, states.name  FROM cities \
-        JOIN states ON cities.state.id = states.id \
+        JOIN states ON cities.state_id = states.id \
         WHERE states.name LIKE %s \
         ORDER BY cities.id ASC", (state_name,))
 
