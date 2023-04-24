@@ -5,6 +5,7 @@ object from the database hbtn_0e_6_usa
 """
 
 import sys
+from sys import argv
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
