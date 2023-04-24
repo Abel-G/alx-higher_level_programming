@@ -5,9 +5,8 @@ object from the database hbtn_0e_6_usa
 """
 
 import sys
-from sys import argv
 from model_state import Base, State
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import session
 from sqlalchemy import create_engine
 
 
@@ -30,3 +29,4 @@ if __name__ == "__main__":
         print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
+    session.close()
