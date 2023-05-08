@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+""" script that takes in a url and and email add. send POST"""[import requests
+import sys
+
+# Get URL and email from command line arguments
+url = sys.argv[1]
+email = sys.argv[2]
+
+# Send POST request with email as parameter and get response
+response = requests.post(url, data={'email': email})
+
+# Display the body of the response
+print(response.text)
